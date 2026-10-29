@@ -1,0 +1,60 @@
+name: Atualiza dados DataJud
+
+# Consulta a API Pública do DataJud em dias úteis e grava os CSVs em docs/dados
+# somente quando o TJRR enviou uma remessa nova. O commit dispara a publicação
+# (workflow "Deploy to GitHub Pages", gatilho workflow_run).
+
+on:
+  schedule:
+    - cron: "56 11 * * 1-5"   # 7h56 em Boa Vista/Manaus (UTC-4), segunda a sexta
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: "Baixar de novo mesmo sem remessa nova"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualiza-dados
+  cancel-in-progress: false
+
+jobs:
+  coleta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Consultar a API e gerar os CSVs
+        env:
+          DATAJUD_KEY: ${{ secrets.DATAJUD_KEY }}
+          FORCAR: ${{ inputs.forcar && '--forcar' || '' }}
+        run: |
+          ANTERIOR=$(tail -n +2 docs/dados/tjrr_carga.csv | cut -d, -f4 | sort | tail -n1)
+          echo "Última remessa já publicada: ${ANTERIOR:-nenhuma}"
+          python3 -I scripts/atualiza_datajud.py "${ANTERIOR:-1970-01-01T00:00:00Z}" "$RUNNER_TEMP/saida" $FORCAR | tee "$RUNNER_TEMP/log.txt"
+
+      - name: Gravar dados novos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if grep -q '^NOVA_CARGA' "$RUNNER_TEMP/log.txt"; then
+            cp "$RUNNER_TEMP"/saida/*.csv docs/dados/
+            git add docs/dados
+            git commit -m "dados: remessa DataJud de $(grep '^NOVA_CARGA' "$RUNNER_TEMP/log.txt" | cut -d' ' -f2)" || echo "Nada mudou nos arquivos"
+          elif [ -z "$(git log -1 --since='45 days ago' --format=%H)" ]; then
+            # Repositórios públicos têm a agenda desativada após 60 dias sem atividade.
+            date -u +%Y-%m-%dT%H:%M:%SZ > docs/dados/ultima_verificacao.txt
+            git add docs/dados/ultima_verificacao.txt
+            git commit -m "chore: verificação periódica, sem remessa nova"
+          fi
+          git push

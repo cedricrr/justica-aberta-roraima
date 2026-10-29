@@ -1,0 +1,396 @@
+mes,orgao,ordem,periodo,casos
+2026-09,Todos,1,setembro/2025 inteiro,5299
+2026-09,1ª Vara Criminal,1,setembro/2025 inteiro,65
+2026-09,1ª Vara Criminal da Justiça Militar,1,setembro/2025 inteiro,2
+2026-09,1ª Vara Criminal do Tribunal do Júri,1,setembro/2025 inteiro,30
+2026-09,1ª Vara Cível,1,setembro/2025 inteiro,209
+2026-09,1ª Vara da Fazenda Pública,1,setembro/2025 inteiro,124
+2026-09,1º Juiz das Garantias,1,setembro/2025 inteiro,42
+2026-09,1º Juizado Cível,1,setembro/2025 inteiro,358
+2026-09,1º Juizado de Violência Doméstica,1,setembro/2025 inteiro,25
+2026-09,1º Núcleo de Justiça 4.0,1,setembro/2025 inteiro,14
+2026-09,2ª Vara Criminal,1,setembro/2025 inteiro,50
+2026-09,2ª Vara Criminal da Justiça Militar,1,setembro/2025 inteiro,2
+2026-09,2ª Vara Criminal do Tribunal do Júri,1,setembro/2025 inteiro,35
+2026-09,2ª Vara Cível,1,setembro/2025 inteiro,183
+2026-09,2ª Vara da Fazenda Pública,1,setembro/2025 inteiro,122
+2026-09,2º Juiz das Garantias,1,setembro/2025 inteiro,38
+2026-09,2º Juizado Cível,1,setembro/2025 inteiro,356
+2026-09,2º Juizado de Violência Doméstica,1,setembro/2025 inteiro,26
+2026-09,2º Núcleo de Justiça 4.0,1,setembro/2025 inteiro,33
+2026-09,3ª Vara Criminal,1,setembro/2025 inteiro,44
+2026-09,3ª Vara Cível,1,setembro/2025 inteiro,179
+2026-09,3º Juiz das Garantias,1,setembro/2025 inteiro,39
+2026-09,3º Juizado Cível,1,setembro/2025 inteiro,356
+2026-09,3º Juizado de Violência Doméstica,1,setembro/2025 inteiro,1
+2026-09,4ª Vara Cível,1,setembro/2025 inteiro,182
+2026-09,5ª Vara Cível,1,setembro/2025 inteiro,70
+2026-09,6ª Vara Cível,1,setembro/2025 inteiro,76
+2026-09,Gabinete da Desembargadora Elaine Bianchi,1,setembro/2025 inteiro,126
+2026-09,Gabinete da Desembargadora Tânia Vasconcelos Dias,1,setembro/2025 inteiro,120
+2026-09,Gabinete do Desembargador Alessandro Tramujas,1,setembro/2025 inteiro,25
+2026-09,Gabinete do Desembargador Almiro Padilha,1,setembro/2025 inteiro,133
+2026-09,Gabinete do Desembargador Cristóvão Suter,1,setembro/2025 inteiro,121
+2026-09,Gabinete do Desembargador Erick Linhares,1,setembro/2025 inteiro,1
+2026-09,Gabinete do Desembargador Jesus Rodrigues,1,setembro/2025 inteiro,73
+2026-09,Gabinete do Desembargador Mauro Campello,1,setembro/2025 inteiro,81
+2026-09,Gabinete do Desembargador Mozarildo Cavalcanti,1,setembro/2025 inteiro,117
+2026-09,Gabinete do Desembargador Ricardo Oliveira,1,setembro/2025 inteiro,38
+2026-09,Juiz das Garantias 1ª Tit. · Rorainópolis,1,setembro/2025 inteiro,2
+2026-09,Juiz das Garantias 2ª Tit. · Rorainópolis,1,setembro/2025 inteiro,6
+2026-09,Juiz das Garantias da Vara de Crimes Contra Vulneráveis,1,setembro/2025 inteiro,5
+2026-09,Juiz das Garantias da Vara de Entorpecentes e Org. Crim.,1,setembro/2025 inteiro,7
+2026-09,Juiz das Garantias · Alto Alegre,1,setembro/2025 inteiro,4
+2026-09,Juiz das Garantias · Bonfim,1,setembro/2025 inteiro,7
+2026-09,Juiz das Garantias · Caracaraí,1,setembro/2025 inteiro,1
+2026-09,Juiz das Garantias · Mucajaí,1,setembro/2025 inteiro,32
+2026-09,Juiz das Garantias · São Luiz,1,setembro/2025 inteiro,6
+2026-09,Juizado Criminal 1º Titular · Rorainópolis,1,setembro/2025 inteiro,3
+2026-09,Juizado Criminal 2º Titular · Rorainópolis,1,setembro/2025 inteiro,9
+2026-09,Juizado Criminal · Alto Alegre,1,setembro/2025 inteiro,14
+2026-09,Juizado Criminal · Bonfim,1,setembro/2025 inteiro,5
+2026-09,Juizado Criminal · Caracaraí,1,setembro/2025 inteiro,2
+2026-09,Juizado Criminal · Mucajaí,1,setembro/2025 inteiro,8
+2026-09,Juizado Criminal · Pacaraima,1,setembro/2025 inteiro,11
+2026-09,Juizado Criminal · São Luiz,1,setembro/2025 inteiro,2
+2026-09,Juizado Cível 1º Titular · Rorainópolis,1,setembro/2025 inteiro,11
+2026-09,Juizado Cível 2º Titular · Rorainópolis,1,setembro/2025 inteiro,8
+2026-09,Juizado Cível · Alto Alegre,1,setembro/2025 inteiro,22
+2026-09,Juizado Cível · Bonfim,1,setembro/2025 inteiro,14
+2026-09,Juizado Cível · Caracaraí,1,setembro/2025 inteiro,18
+2026-09,Juizado Cível · Mucajaí,1,setembro/2025 inteiro,15
+2026-09,Juizado Cível · Pacaraima,1,setembro/2025 inteiro,10
+2026-09,Juizado Cível · São Luiz,1,setembro/2025 inteiro,38
+2026-09,Juizado Esp Faz Pública,1,setembro/2025 inteiro,257
+2026-09,Juizado Especial Criminal,1,setembro/2025 inteiro,143
+2026-09,Juizado da Faz. Púb. de Caracaraí · Caracaraí,1,setembro/2025 inteiro,3
+2026-09,Juizado da Faz. Púb. de Rorainópolis - 1º Titular · Rorainópolis,1,setembro/2025 inteiro,2
+2026-09,Núcleo de Plantão Jud. e Aud. de Cust.,1,setembro/2025 inteiro,32
+2026-09,Turma Recursal,1,setembro/2025 inteiro,312
+2026-09,Vara Criminal 1º Titular · Rorainópolis,1,setembro/2025 inteiro,13
+2026-09,Vara Criminal 2º Titular · Rorainópolis,1,setembro/2025 inteiro,21
+2026-09,Vara Criminal · Alto Alegre,1,setembro/2025 inteiro,13
+2026-09,Vara Criminal · Bonfim,1,setembro/2025 inteiro,19
+2026-09,Vara Criminal · Caracaraí,1,setembro/2025 inteiro,21
+2026-09,Vara Criminal · Mucajaí,1,setembro/2025 inteiro,25
+2026-09,Vara Criminal · Pacaraima,1,setembro/2025 inteiro,33
+2026-09,Vara Criminal · São Luiz,1,setembro/2025 inteiro,23
+2026-09,Vara Cível 1º Titular · Rorainópolis,1,setembro/2025 inteiro,35
+2026-09,Vara Cível 2º Titular · Rorainópolis,1,setembro/2025 inteiro,18
+2026-09,Vara Cível · Alto Alegre,1,setembro/2025 inteiro,20
+2026-09,Vara Cível · Bonfim,1,setembro/2025 inteiro,20
+2026-09,Vara Cível · Caracaraí,1,setembro/2025 inteiro,65
+2026-09,Vara Cível · Mucajaí,1,setembro/2025 inteiro,33
+2026-09,Vara Cível · Pacaraima,1,setembro/2025 inteiro,39
+2026-09,Vara Cível · São Luiz,1,setembro/2025 inteiro,27
+2026-09,Vara Itinerante,1,setembro/2025 inteiro,7
+2026-09,Vara da Fazenda Pública 1º Titular · Rorainópolis,1,setembro/2025 inteiro,16
+2026-09,Vara da Fazenda Pública 2º Titular · Rorainópolis,1,setembro/2025 inteiro,6
+2026-09,Vara da Fazenda Pública · Alto Alegre,1,setembro/2025 inteiro,8
+2026-09,Vara da Fazenda Pública · Bonfim,1,setembro/2025 inteiro,7
+2026-09,Vara da Fazenda Pública · Caracaraí,1,setembro/2025 inteiro,7
+2026-09,Vara da Fazenda Pública · Mucajaí,1,setembro/2025 inteiro,17
+2026-09,Vara da Fazenda Pública · Pacaraima,1,setembro/2025 inteiro,9
+2026-09,Vara da Fazenda Pública · São Luiz,1,setembro/2025 inteiro,19
+2026-09,Vara de Crimes Contra Vulneráveis,1,setembro/2025 inteiro,2
+2026-09,Vara de Entorpecentes e Org. Criminosas,1,setembro/2025 inteiro,52
+2026-09,Vara de Exec. de Penas e Medidas Altern. 1º Titular · Rorainópolis,1,setembro/2025 inteiro,5
+2026-09,Vara de Exec. de Penas e Medidas Altern. 2º Titular · Rorainópolis,1,setembro/2025 inteiro,16
+2026-09,Vara de Exec. de Penas e Medidas Altern. · Alto Alegre,1,setembro/2025 inteiro,1
+2026-09,Vara de Exec. de Penas e Medidas Altern. · Bonfim,1,setembro/2025 inteiro,9
+2026-09,Vara de Exec. de Penas e Medidas Altern. · Caracaraí,1,setembro/2025 inteiro,21
+2026-09,Vara de Exec. de Penas e Medidas Altern. · Mucajaí,1,setembro/2025 inteiro,4
+2026-09,Vara de Exec. de Penas e Medidas Altern. · Pacaraima,1,setembro/2025 inteiro,9
+2026-09,Vara de Exec. de Penas e Medidas Altern. · São Luiz,1,setembro/2025 inteiro,9
+2026-09,Vara de Execução Fiscal,1,setembro/2025 inteiro,11
+2026-09,Vara de Penas e Medidas Alternativas,1,setembro/2025 inteiro,134
+2026-09,Todos,2,agosto/2026 inteiro,4859
+2026-09,1ª Vara Criminal,2,agosto/2026 inteiro,37
+2026-09,1ª Vara Criminal da Justiça Militar,2,agosto/2026 inteiro,2
+2026-09,1ª Vara Criminal do Tribunal do Júri,2,agosto/2026 inteiro,32
+2026-09,1ª Vara Cível,2,agosto/2026 inteiro,236
+2026-09,1ª Vara da Fazenda Pública,2,agosto/2026 inteiro,61
+2026-09,1º Juiz das Garantias,2,agosto/2026 inteiro,40
+2026-09,1º Juizado Cível,2,agosto/2026 inteiro,292
+2026-09,1º Juizado de Violência Doméstica,2,agosto/2026 inteiro,22
+2026-09,1º Núcleo de Justiça 4.0,2,agosto/2026 inteiro,24
+2026-09,2ª Vara Criminal,2,agosto/2026 inteiro,41
+2026-09,2ª Vara Criminal da Justiça Militar,2,agosto/2026 inteiro,4
+2026-09,2ª Vara Criminal do Tribunal do Júri,2,agosto/2026 inteiro,23
+2026-09,2ª Vara Cível,2,agosto/2026 inteiro,213
+2026-09,2ª Vara da Fazenda Pública,2,agosto/2026 inteiro,66
+2026-09,2º Juiz das Garantias,2,agosto/2026 inteiro,29
+2026-09,2º Juizado Cível,2,agosto/2026 inteiro,280
+2026-09,2º Juizado de Violência Doméstica,2,agosto/2026 inteiro,38
+2026-09,2º Núcleo de Justiça 4.0,2,agosto/2026 inteiro,28
+2026-09,3ª Vara Criminal,2,agosto/2026 inteiro,36
+2026-09,3ª Vara Cível,2,agosto/2026 inteiro,225
+2026-09,3º Juiz das Garantias,2,agosto/2026 inteiro,33
+2026-09,3º Juizado Cível,2,agosto/2026 inteiro,281
+2026-09,3º Juizado de Violência Doméstica,2,agosto/2026 inteiro,44
+2026-09,4ª Vara Cível,2,agosto/2026 inteiro,210
+2026-09,5ª Vara Cível,2,agosto/2026 inteiro,66
+2026-09,6ª Vara Cível,2,agosto/2026 inteiro,53
+2026-09,Centro Judiciário de Solução de Conflitos e Cidadania de Boa Vista,2,agosto/2026 inteiro,190
+2026-09,Gabinete da Desembargadora Elaine Bianchi,2,agosto/2026 inteiro,142
+2026-09,Gabinete da Desembargadora Tânia Vasconcelos Dias,2,agosto/2026 inteiro,92
+2026-09,Gabinete do Desembargador Alessandro Tramujas,2,agosto/2026 inteiro,71
+2026-09,Gabinete do Desembargador Almiro Padilha,2,agosto/2026 inteiro,94
+2026-09,Gabinete do Desembargador Cristóvão Suter,2,agosto/2026 inteiro,91
+2026-09,Gabinete do Desembargador Erick Linhares,2,agosto/2026 inteiro,1
+2026-09,Gabinete do Desembargador Jesus Rodrigues,2,agosto/2026 inteiro,45
+2026-09,Gabinete do Desembargador Mauro Campello,2,agosto/2026 inteiro,49
+2026-09,Gabinete do Desembargador Mozarildo Cavalcanti,2,agosto/2026 inteiro,85
+2026-09,Juiz das Garantias 2ª Tit. · Rorainópolis,2,agosto/2026 inteiro,14
+2026-09,Juiz das Garantias da Vara de Crimes Contra Vulneráveis,2,agosto/2026 inteiro,16
+2026-09,Juiz das Garantias da Vara de Entorpecentes e Org. Crim.,2,agosto/2026 inteiro,17
+2026-09,Juiz das Garantias · Alto Alegre,2,agosto/2026 inteiro,2
+2026-09,Juiz das Garantias · Bonfim,2,agosto/2026 inteiro,1
+2026-09,Juiz das Garantias · Caracaraí,2,agosto/2026 inteiro,1
+2026-09,Juiz das Garantias · Mucajaí,2,agosto/2026 inteiro,10
+2026-09,Juiz das Garantias · Pacaraima,2,agosto/2026 inteiro,5
+2026-09,Juiz das Garantias · São Luiz,2,agosto/2026 inteiro,8
+2026-09,Juizado Criminal 2º Titular · Rorainópolis,2,agosto/2026 inteiro,31
+2026-09,Juizado Criminal · Alto Alegre,2,agosto/2026 inteiro,5
+2026-09,Juizado Criminal · Bonfim,2,agosto/2026 inteiro,8
+2026-09,Juizado Criminal · Caracaraí,2,agosto/2026 inteiro,4
+2026-09,Juizado Criminal · Mucajaí,2,agosto/2026 inteiro,11
+2026-09,Juizado Criminal · Pacaraima,2,agosto/2026 inteiro,9
+2026-09,Juizado Criminal · São Luiz,2,agosto/2026 inteiro,2
+2026-09,Juizado Cível 1º Titular · Rorainópolis,2,agosto/2026 inteiro,33
+2026-09,Juizado Cível · Alto Alegre,2,agosto/2026 inteiro,10
+2026-09,Juizado Cível · Bonfim,2,agosto/2026 inteiro,10
+2026-09,Juizado Cível · Caracaraí,2,agosto/2026 inteiro,17
+2026-09,Juizado Cível · Mucajaí,2,agosto/2026 inteiro,22
+2026-09,Juizado Cível · Pacaraima,2,agosto/2026 inteiro,12
+2026-09,Juizado Cível · São Luiz,2,agosto/2026 inteiro,11
+2026-09,Juizado Esp Faz Pública,2,agosto/2026 inteiro,246
+2026-09,Juizado Especial Criminal,2,agosto/2026 inteiro,122
+2026-09,Juizado da Faz. Púb. de Caracaraí · Caracaraí,2,agosto/2026 inteiro,1
+2026-09,Juizado da Faz. Púb. de Rorainópolis - 1º Titular · Rorainópolis,2,agosto/2026 inteiro,4
+2026-09,Juizado da Fazenda Pública · São Luiz,2,agosto/2026 inteiro,3
+2026-09,Núcleo de Plantão Jud. e Aud. de Cust.,2,agosto/2026 inteiro,31
+2026-09,Turma Recursal,2,agosto/2026 inteiro,255
+2026-09,Vara Criminal 2º Titular · Rorainópolis,2,agosto/2026 inteiro,52
+2026-09,Vara Criminal · Alto Alegre,2,agosto/2026 inteiro,18
+2026-09,Vara Criminal · Bonfim,2,agosto/2026 inteiro,19
+2026-09,Vara Criminal · Caracaraí,2,agosto/2026 inteiro,31
+2026-09,Vara Criminal · Mucajaí,2,agosto/2026 inteiro,24
+2026-09,Vara Criminal · Pacaraima,2,agosto/2026 inteiro,37
+2026-09,Vara Criminal · São Luiz,2,agosto/2026 inteiro,22
+2026-09,Vara Cível 1º Titular · Rorainópolis,2,agosto/2026 inteiro,34
+2026-09,Vara Cível · Alto Alegre,2,agosto/2026 inteiro,20
+2026-09,Vara Cível · Bonfim,2,agosto/2026 inteiro,27
+2026-09,Vara Cível · Caracaraí,2,agosto/2026 inteiro,42
+2026-09,Vara Cível · Mucajaí,2,agosto/2026 inteiro,37
+2026-09,Vara Cível · Pacaraima,2,agosto/2026 inteiro,30
+2026-09,Vara Cível · São Luiz,2,agosto/2026 inteiro,32
+2026-09,Vara da Fazenda Pública 1º Titular · Rorainópolis,2,agosto/2026 inteiro,19
+2026-09,Vara da Fazenda Pública · Alto Alegre,2,agosto/2026 inteiro,11
+2026-09,Vara da Fazenda Pública · Bonfim,2,agosto/2026 inteiro,6
+2026-09,Vara da Fazenda Pública · Caracaraí,2,agosto/2026 inteiro,11
+2026-09,Vara da Fazenda Pública · Mucajaí,2,agosto/2026 inteiro,16
+2026-09,Vara da Fazenda Pública · Pacaraima,2,agosto/2026 inteiro,12
+2026-09,Vara da Fazenda Pública · São Luiz,2,agosto/2026 inteiro,9
+2026-09,Vara de Entorpecentes e Org. Criminosas,2,agosto/2026 inteiro,71
+2026-09,Vara de Exec. de Penas e Medidas Altern. 2º Titular · Rorainópolis,2,agosto/2026 inteiro,3
+2026-09,Vara de Exec. de Penas e Medidas Altern. · Bonfim,2,agosto/2026 inteiro,5
+2026-09,Vara de Exec. de Penas e Medidas Altern. · Caracaraí,2,agosto/2026 inteiro,3
+2026-09,Vara de Exec. de Penas e Medidas Altern. · Mucajaí,2,agosto/2026 inteiro,8
+2026-09,Vara de Exec. de Penas e Medidas Altern. · São Luiz,2,agosto/2026 inteiro,1
+2026-09,Vara de Execução Fiscal,2,agosto/2026 inteiro,12
+2026-09,Vara de Penas e Medidas Alternativas,2,agosto/2026 inteiro,50
+2026-10,Todos,1,outubro/2025 (01 a 19),3071
+2026-10,1ª Vara Criminal,1,outubro/2025 (01 a 19),35
+2026-10,1ª Vara Criminal da Justiça Militar,1,outubro/2025 (01 a 19),3
+2026-10,1ª Vara Criminal do Tribunal do Júri,1,outubro/2025 (01 a 19),14
+2026-10,1ª Vara Cível,1,outubro/2025 (01 a 19),120
+2026-10,1ª Vara da Fazenda Pública,1,outubro/2025 (01 a 19),60
+2026-10,1º Juiz das Garantias,1,outubro/2025 (01 a 19),24
+2026-10,1º Juizado Cível,1,outubro/2025 (01 a 19),193
+2026-10,1º Juizado de Violência Doméstica,1,outubro/2025 (01 a 19),4
+2026-10,1º Núcleo de Justiça 4.0,1,outubro/2025 (01 a 19),15
+2026-10,2ª Vara Criminal,1,outubro/2025 (01 a 19),31
+2026-10,2ª Vara Criminal do Tribunal do Júri,1,outubro/2025 (01 a 19),21
+2026-10,2ª Vara Cível,1,outubro/2025 (01 a 19),117
+2026-10,2ª Vara da Fazenda Pública,1,outubro/2025 (01 a 19),58
+2026-10,2º Juiz das Garantias,1,outubro/2025 (01 a 19),16
+2026-10,2º Juizado Cível,1,outubro/2025 (01 a 19),191
+2026-10,2º Juizado de Violência Doméstica,1,outubro/2025 (01 a 19),10
+2026-10,2º Núcleo de Justiça 4.0,1,outubro/2025 (01 a 19),22
+2026-10,3ª Vara Criminal,1,outubro/2025 (01 a 19),37
+2026-10,3ª Vara Cível,1,outubro/2025 (01 a 19),103
+2026-10,3º Juiz das Garantias,1,outubro/2025 (01 a 19),12
+2026-10,3º Juizado Cível,1,outubro/2025 (01 a 19),194
+2026-10,3º Juizado de Violência Doméstica,1,outubro/2025 (01 a 19),2
+2026-10,4ª Vara Cível,1,outubro/2025 (01 a 19),117
+2026-10,5ª Vara Cível,1,outubro/2025 (01 a 19),43
+2026-10,6ª Vara Cível,1,outubro/2025 (01 a 19),50
+2026-10,Gabinete da Desembargadora Elaine Bianchi,1,outubro/2025 (01 a 19),72
+2026-10,Gabinete da Desembargadora Tânia Vasconcelos Dias,1,outubro/2025 (01 a 19),64
+2026-10,Gabinete do Desembargador Alessandro Tramujas,1,outubro/2025 (01 a 19),13
+2026-10,Gabinete do Desembargador Almiro Padilha,1,outubro/2025 (01 a 19),73
+2026-10,Gabinete do Desembargador Cristóvão Suter,1,outubro/2025 (01 a 19),76
+2026-10,Gabinete do Desembargador Jesus Rodrigues,1,outubro/2025 (01 a 19),42
+2026-10,Gabinete do Desembargador Mauro Campello,1,outubro/2025 (01 a 19),39
+2026-10,Gabinete do Desembargador Mozarildo Cavalcanti,1,outubro/2025 (01 a 19),75
+2026-10,Gabinete do Desembargador Ricardo Oliveira,1,outubro/2025 (01 a 19),22
+2026-10,Juiz das Garantias 2ª Tit. · Rorainópolis,1,outubro/2025 (01 a 19),2
+2026-10,Juiz das Garantias · Bonfim,1,outubro/2025 (01 a 19),9
+2026-10,Juiz das Garantias · Caracaraí,1,outubro/2025 (01 a 19),5
+2026-10,Juiz das Garantias · Mucajaí,1,outubro/2025 (01 a 19),5
+2026-10,Juiz das Garantias · Pacaraima,1,outubro/2025 (01 a 19),12
+2026-10,Juiz das Garantias · São Luiz,1,outubro/2025 (01 a 19),5
+2026-10,Juizado Criminal 1º Titular · Rorainópolis,1,outubro/2025 (01 a 19),4
+2026-10,Juizado Criminal 2º Titular · Rorainópolis,1,outubro/2025 (01 a 19),4
+2026-10,Juizado Criminal · Alto Alegre,1,outubro/2025 (01 a 19),2
+2026-10,Juizado Criminal · Bonfim,1,outubro/2025 (01 a 19),1
+2026-10,Juizado Criminal · Caracaraí,1,outubro/2025 (01 a 19),3
+2026-10,Juizado Criminal · Mucajaí,1,outubro/2025 (01 a 19),22
+2026-10,Juizado Criminal · Pacaraima,1,outubro/2025 (01 a 19),6
+2026-10,Juizado Criminal · São Luiz,1,outubro/2025 (01 a 19),3
+2026-10,Juizado Cível 1º Titular · Rorainópolis,1,outubro/2025 (01 a 19),12
+2026-10,Juizado Cível 2º Titular · Rorainópolis,1,outubro/2025 (01 a 19),2
+2026-10,Juizado Cível · Alto Alegre,1,outubro/2025 (01 a 19),6
+2026-10,Juizado Cível · Bonfim,1,outubro/2025 (01 a 19),6
+2026-10,Juizado Cível · Caracaraí,1,outubro/2025 (01 a 19),10
+2026-10,Juizado Cível · Mucajaí,1,outubro/2025 (01 a 19),7
+2026-10,Juizado Cível · Pacaraima,1,outubro/2025 (01 a 19),10
+2026-10,Juizado Cível · São Luiz,1,outubro/2025 (01 a 19),17
+2026-10,Juizado Esp Faz Pública,1,outubro/2025 (01 a 19),114
+2026-10,Juizado Especial Criminal,1,outubro/2025 (01 a 19),105
+2026-10,Juizado da Faz. Púb. de Rorainópolis - 1º Titular · Rorainópolis,1,outubro/2025 (01 a 19),3
+2026-10,Núcleo de Plantão Jud. e Aud. de Cust.,1,outubro/2025 (01 a 19),19
+2026-10,Turma Recursal,1,outubro/2025 (01 a 19),173
+2026-10,Vara Criminal 1º Titular · Rorainópolis,1,outubro/2025 (01 a 19),6
+2026-10,Vara Criminal 2º Titular · Rorainópolis,1,outubro/2025 (01 a 19),20
+2026-10,Vara Criminal · Alto Alegre,1,outubro/2025 (01 a 19),6
+2026-10,Vara Criminal · Bonfim,1,outubro/2025 (01 a 19),10
+2026-10,Vara Criminal · Caracaraí,1,outubro/2025 (01 a 19),21
+2026-10,Vara Criminal · Mucajaí,1,outubro/2025 (01 a 19),16
+2026-10,Vara Criminal · Pacaraima,1,outubro/2025 (01 a 19),20
+2026-10,Vara Criminal · São Luiz,1,outubro/2025 (01 a 19),21
+2026-10,Vara Cível 1º Titular · Rorainópolis,1,outubro/2025 (01 a 19),23
+2026-10,Vara Cível 2º Titular · Rorainópolis,1,outubro/2025 (01 a 19),5
+2026-10,Vara Cível · Alto Alegre,1,outubro/2025 (01 a 19),11
+2026-10,Vara Cível · Bonfim,1,outubro/2025 (01 a 19),10
+2026-10,Vara Cível · Caracaraí,1,outubro/2025 (01 a 19),21
+2026-10,Vara Cível · Mucajaí,1,outubro/2025 (01 a 19),8
+2026-10,Vara Cível · Pacaraima,1,outubro/2025 (01 a 19),11
+2026-10,Vara Cível · São Luiz,1,outubro/2025 (01 a 19),18
+2026-10,Vara Itinerante,1,outubro/2025 (01 a 19),2
+2026-10,Vara da Fazenda Pública 1º Titular · Rorainópolis,1,outubro/2025 (01 a 19),14
+2026-10,Vara da Fazenda Pública 2º Titular · Rorainópolis,1,outubro/2025 (01 a 19),8
+2026-10,Vara da Fazenda Pública · Alto Alegre,1,outubro/2025 (01 a 19),5
+2026-10,Vara da Fazenda Pública · Bonfim,1,outubro/2025 (01 a 19),3
+2026-10,Vara da Fazenda Pública · Caracaraí,1,outubro/2025 (01 a 19),5
+2026-10,Vara da Fazenda Pública · Mucajaí,1,outubro/2025 (01 a 19),33
+2026-10,Vara da Fazenda Pública · Pacaraima,1,outubro/2025 (01 a 19),6
+2026-10,Vara da Fazenda Pública · São Luiz,1,outubro/2025 (01 a 19),7
+2026-10,Vara de Crimes Contra Vulneráveis,1,outubro/2025 (01 a 19),2
+2026-10,Vara de Entorpecentes e Org. Criminosas,1,outubro/2025 (01 a 19),55
+2026-10,Vara de Exec. de Penas e Medidas Altern. 1º Titular · Rorainópolis,1,outubro/2025 (01 a 19),8
+2026-10,Vara de Exec. de Penas e Medidas Altern. 2º Titular · Rorainópolis,1,outubro/2025 (01 a 19),16
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Alto Alegre,1,outubro/2025 (01 a 19),1
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Bonfim,1,outubro/2025 (01 a 19),1
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Caracaraí,1,outubro/2025 (01 a 19),5
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Mucajaí,1,outubro/2025 (01 a 19),1
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Pacaraima,1,outubro/2025 (01 a 19),8
+2026-10,Vara de Execução Fiscal,1,outubro/2025 (01 a 19),4
+2026-10,Vara de Penas e Medidas Alternativas,1,outubro/2025 (01 a 19),125
+2026-10,Todos,2,setembro/2026 (01 a 19),2926
+2026-10,1ª Vara Criminal,2,setembro/2026 (01 a 19),20
+2026-10,1ª Vara Criminal da Justiça Militar,2,setembro/2026 (01 a 19),2
+2026-10,1ª Vara Criminal do Tribunal do Júri,2,setembro/2026 (01 a 19),19
+2026-10,1ª Vara Cível,2,setembro/2026 (01 a 19),105
+2026-10,1ª Vara da Fazenda Pública,2,setembro/2026 (01 a 19),33
+2026-10,1º Juiz das Garantias,2,setembro/2026 (01 a 19),37
+2026-10,1º Juizado Cível,2,setembro/2026 (01 a 19),168
+2026-10,1º Juizado de Violência Doméstica,2,setembro/2026 (01 a 19),14
+2026-10,1º Núcleo de Justiça 4.0,2,setembro/2026 (01 a 19),16
+2026-10,2ª Vara Criminal,2,setembro/2026 (01 a 19),21
+2026-10,2ª Vara Criminal da Justiça Militar,2,setembro/2026 (01 a 19),1
+2026-10,2ª Vara Criminal do Tribunal do Júri,2,setembro/2026 (01 a 19),15
+2026-10,2ª Vara Cível,2,setembro/2026 (01 a 19),196
+2026-10,2ª Vara da Fazenda Pública,2,setembro/2026 (01 a 19),35
+2026-10,2º Juiz das Garantias,2,setembro/2026 (01 a 19),25
+2026-10,2º Juizado Cível,2,setembro/2026 (01 a 19),170
+2026-10,2º Juizado de Violência Doméstica,2,setembro/2026 (01 a 19),28
+2026-10,2º Núcleo de Justiça 4.0,2,setembro/2026 (01 a 19),16
+2026-10,3ª Vara Criminal,2,setembro/2026 (01 a 19),28
+2026-10,3ª Vara Cível,2,setembro/2026 (01 a 19),118
+2026-10,3º Juiz das Garantias,2,setembro/2026 (01 a 19),27
+2026-10,3º Juizado Cível,2,setembro/2026 (01 a 19),168
+2026-10,3º Juizado de Violência Doméstica,2,setembro/2026 (01 a 19),24
+2026-10,4ª Vara Cível,2,setembro/2026 (01 a 19),93
+2026-10,5ª Vara Cível,2,setembro/2026 (01 a 19),38
+2026-10,6ª Vara Cível,2,setembro/2026 (01 a 19),44
+2026-10,Gabinete da Desembargadora Elaine Bianchi,2,setembro/2026 (01 a 19),73
+2026-10,Gabinete da Desembargadora Tânia Vasconcelos Dias,2,setembro/2026 (01 a 19),67
+2026-10,Gabinete do Desembargador Alessandro Tramujas,2,setembro/2026 (01 a 19),39
+2026-10,Gabinete do Desembargador Almiro Padilha,2,setembro/2026 (01 a 19),71
+2026-10,Gabinete do Desembargador Cristóvão Suter,2,setembro/2026 (01 a 19),63
+2026-10,Gabinete do Desembargador Erick Linhares,2,setembro/2026 (01 a 19),1
+2026-10,Gabinete do Desembargador Jesus Rodrigues,2,setembro/2026 (01 a 19),39
+2026-10,Gabinete do Desembargador Mauro Campello,2,setembro/2026 (01 a 19),37
+2026-10,Gabinete do Desembargador Mozarildo Cavalcanti,2,setembro/2026 (01 a 19),68
+2026-10,Juiz das Garantias 2ª Tit. · Rorainópolis,2,setembro/2026 (01 a 19),12
+2026-10,Juiz das Garantias da Vara de Crimes Contra Vulneráveis,2,setembro/2026 (01 a 19),4
+2026-10,Juiz das Garantias da Vara de Entorpecentes e Org. Crim.,2,setembro/2026 (01 a 19),2
+2026-10,Juiz das Garantias · Bonfim,2,setembro/2026 (01 a 19),8
+2026-10,Juiz das Garantias · Caracaraí,2,setembro/2026 (01 a 19),5
+2026-10,Juiz das Garantias · Mucajaí,2,setembro/2026 (01 a 19),9
+2026-10,Juiz das Garantias · Pacaraima,2,setembro/2026 (01 a 19),4
+2026-10,Juiz das Garantias · São Luiz,2,setembro/2026 (01 a 19),2
+2026-10,Juizado Criminal 2º Titular · Rorainópolis,2,setembro/2026 (01 a 19),24
+2026-10,Juizado Criminal · Alto Alegre,2,setembro/2026 (01 a 19),1
+2026-10,Juizado Criminal · Bonfim,2,setembro/2026 (01 a 19),1
+2026-10,Juizado Criminal · Caracaraí,2,setembro/2026 (01 a 19),1
+2026-10,Juizado Criminal · Mucajaí,2,setembro/2026 (01 a 19),8
+2026-10,Juizado Criminal · Pacaraima,2,setembro/2026 (01 a 19),3
+2026-10,Juizado Criminal · São Luiz,2,setembro/2026 (01 a 19),4
+2026-10,Juizado Cível 1º Titular · Rorainópolis,2,setembro/2026 (01 a 19),11
+2026-10,Juizado Cível · Alto Alegre,2,setembro/2026 (01 a 19),3
+2026-10,Juizado Cível · Bonfim,2,setembro/2026 (01 a 19),6
+2026-10,Juizado Cível · Caracaraí,2,setembro/2026 (01 a 19),4
+2026-10,Juizado Cível · Mucajaí,2,setembro/2026 (01 a 19),4
+2026-10,Juizado Cível · Pacaraima,2,setembro/2026 (01 a 19),5
+2026-10,Juizado Cível · São Luiz,2,setembro/2026 (01 a 19),9
+2026-10,Juizado Esp Faz Pública,2,setembro/2026 (01 a 19),147
+2026-10,Juizado Especial Criminal,2,setembro/2026 (01 a 19),85
+2026-10,Juizado da Faz. Púb. de Rorainópolis - 1º Titular · Rorainópolis,2,setembro/2026 (01 a 19),3
+2026-10,Juizado da Fazenda Pública · São Luiz,2,setembro/2026 (01 a 19),2
+2026-10,Núcleo de Plantão Jud. e Aud. de Cust.,2,setembro/2026 (01 a 19),18
+2026-10,Turma Recursal,2,setembro/2026 (01 a 19),217
+2026-10,Vara Criminal 2º Titular · Rorainópolis,2,setembro/2026 (01 a 19),15
+2026-10,Vara Criminal · Alto Alegre,2,setembro/2026 (01 a 19),10
+2026-10,Vara Criminal · Bonfim,2,setembro/2026 (01 a 19),5
+2026-10,Vara Criminal · Caracaraí,2,setembro/2026 (01 a 19),12
+2026-10,Vara Criminal · Mucajaí,2,setembro/2026 (01 a 19),10
+2026-10,Vara Criminal · Pacaraima,2,setembro/2026 (01 a 19),17
+2026-10,Vara Criminal · São Luiz,2,setembro/2026 (01 a 19),19
+2026-10,Vara Cível 1º Titular · Rorainópolis,2,setembro/2026 (01 a 19),32
+2026-10,Vara Cível 2º Titular · Rorainópolis,2,setembro/2026 (01 a 19),1
+2026-10,Vara Cível · Alto Alegre,2,setembro/2026 (01 a 19),15
+2026-10,Vara Cível · Bonfim,2,setembro/2026 (01 a 19),15
+2026-10,Vara Cível · Caracaraí,2,setembro/2026 (01 a 19),16
+2026-10,Vara Cível · Mucajaí,2,setembro/2026 (01 a 19),23
+2026-10,Vara Cível · Pacaraima,2,setembro/2026 (01 a 19),6
+2026-10,Vara Cível · São Luiz,2,setembro/2026 (01 a 19),20
+2026-10,Vara da Fazenda Pública 1º Titular · Rorainópolis,2,setembro/2026 (01 a 19),11
+2026-10,Vara da Fazenda Pública · Alto Alegre,2,setembro/2026 (01 a 19),11
+2026-10,Vara da Fazenda Pública · Bonfim,2,setembro/2026 (01 a 19),3
+2026-10,Vara da Fazenda Pública · Caracaraí,2,setembro/2026 (01 a 19),15
+2026-10,Vara da Fazenda Pública · Mucajaí,2,setembro/2026 (01 a 19),9
+2026-10,Vara da Fazenda Pública · Pacaraima,2,setembro/2026 (01 a 19),24
+2026-10,Vara da Fazenda Pública · São Luiz,2,setembro/2026 (01 a 19),6
+2026-10,Vara de Entorpecentes e Org. Criminosas,2,setembro/2026 (01 a 19),44
+2026-10,Vara de Exec. de Penas e Medidas Altern. 2º Titular · Rorainópolis,2,setembro/2026 (01 a 19),4
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Alto Alegre,2,setembro/2026 (01 a 19),1
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Bonfim,2,setembro/2026 (01 a 19),2
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Caracaraí,2,setembro/2026 (01 a 19),10
+2026-10,Vara de Exec. de Penas e Medidas Altern. · Mucajaí,2,setembro/2026 (01 a 19),1
+2026-10,Vara de Exec. de Penas e Medidas Altern. · São Luiz,2,setembro/2026 (01 a 19),1
+2026-10,Vara de Execução Fiscal,2,setembro/2026 (01 a 19),12
+2026-10,Vara de Execução Penal,2,setembro/2026 (01 a 19),1
+2026-10,Vara de Penas e Medidas Alternativas,2,setembro/2026 (01 a 19),34

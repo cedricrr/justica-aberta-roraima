@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Justiça Aberta Roraima - Casos novos no TJRR"
+message: "Se você usar este painel ou os dados derivados, cite conforme abaixo e cite o DataJud (CNJ) como fonte primária."
+type: software
+authors:
+  - given-names: Cedric
+    family-names: "Williams"
+repository-code: "https://github.com/cedricrr/justica-aberta-roraima"
+url: "https://cedricrr.github.io/justica-aberta-roraima/"
+keywords:
+  - DataJud
+  - TJRR
+  - Roraima
+  - dados abertos
+  - jurimetria
+  - transparência
+license: MIT
+date-released: "2026-10-29"
+references:
+  - type: database
+    title: "API Pública do DataJud"
+    authors:
+      - name: "Conselho Nacional de Justiça"
+    url: "https://datajud-wiki.cnj.jus.br/api-publica/"

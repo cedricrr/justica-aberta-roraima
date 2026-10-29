@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justiça Aberta Roraima · Casos novos no TJRR</title>
+<meta name="description" content="Casos novos ajuizados no Tribunal de Justiça de Roraima, por mês, grau, classe, assunto e órgão julgador, a partir da API Pública do DataJud (CNJ).">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B1220'/%3E%3Crect x='6' y='18' width='5' height='8' fill='%23FF7A45'/%3E%3Crect x='13.5' y='11' width='5' height='15' fill='%23FF7A45'/%3E%3Crect x='21' y='6' width='5' height='20' fill='%237CC4FF'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/painel.css">
+<script src="vendor/d3.v7.9.0.min.js"></script>
+<script src="assets/dash-shim.js"></script>
+</head>
+<body>
+<div id="dash-root">
+<div class="tj">
+  <div class="tj-bar">
+    <div class="tj-brand"><h1>Justiça Aberta Roraima</h1><span class="tj-sub-brand"><span id="titulo">Casos novos</span> · dados públicos do TJRR</span></div>
+    <div class="tj-when"><div>Recorte <b id="recorte">—</b></div><div>Extração do DataJud <b data-source="carga" data-field="extracao">—</b></div></div>
+    <button class="tj-tvbtn" type="button" id="tj-tv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>Modo TV</button>
+  </div>
+
+  <div class="tj-filters" id="filtros">
+    <div class="tj-fgroup">
+      <span class="tj-flabel" id="lbl-mes">Mês</span>
+      <div class="tj-seg" role="group" aria-labelledby="lbl-mes" id="meses" data-source="carga"></div>
+    </div>
+    <div class="tj-fgroup grow">
+      <label class="tj-flabel" for="orgao-sel">Gabinete, vara ou juizado</label>
+      <div class="tj-orow">
+        <input class="tj-ofind" id="orgao-busca" type="search" placeholder="Filtrar a lista…" aria-label="Filtrar a lista de órgãos">
+        <select class="tj-osel" id="orgao-sel" data-source="orgaos"></select>
+        <button class="tj-clear" type="button" id="orgao-limpar" hidden>Limpar filtro</button>
+      </div>
+    </div>
+  </div>
+  <div class="tj-strip"></div>
+
+  <div class="tj-body">
+  <section class="tj-hero" id="indicadores">
+    <div>
+      <div class="tj-eye" id="hero-eye">Processos ajuizados no TJRR</div>
+      <div class="tj-hero-num dash-skeleton" data-source="resumo" data-field="total">—</div>
+      <p class="tj-take" id="resumo-texto"><span class="dash-skeleton">Carregando</span></p>
+      <div class="tj-chip" id="chip" hidden>Filtro: <b id="chip-nome"></b></div>
+      <div class="tj-dl">Baixar dados (CSV):
+        <a href="dados/tjrr_casos.csv" download>processos</a>
+        <a href="dados/tjrr_comparativo.csv" download>bases de comparação</a>
+        <a href="dados/tjrr_carga.csv" download>remessa usada</a></div>
+    </div>
+    <p class="tj-note" id="nota"><b id="nota-t">—</b><span id="nota-x"></span> “Caso novo” é o processo com data de ajuizamento no período, contado por grau: o mesmo número pode aparecer no 1º grau e em recurso.</p>
+  </section>
+
+  <section class="tj-kpis">
+    <div class="tj-card"><div class="tj-eye" id="k1-t">vs. mês anterior</div>
+      <div class="tj-big dash-skeleton" data-source="resumo" data-field="var_mes">—</div>
+      <div class="tj-delta"><span class="per" data-source="comparativo" data-field="periodo">—</span> · <span class="cas" data-source="comparativo" data-field="casos">—</span> casos</div></div>
+    <div class="tj-card"><div class="tj-eye" id="k2-t">vs. ano anterior</div>
+      <div class="tj-big dash-skeleton" data-source="resumo" data-field="var_ano">—</div>
+      <div class="tj-delta"><span class="per" data-source="comparativo" data-field="periodo">—</span> · <span class="cas" data-source="comparativo" data-field="casos">—</span> casos</div></div>
+    <div class="tj-card" id="k3"><div class="tj-eye" id="k3-t">Comarca de Boa Vista</div>
+      <div class="tj-big blue dash-skeleton" data-source="resumo" data-field="share_bv">—</div>
+      <div class="tj-delta" id="k3-s">dos casos novos do período</div></div>
+  </section>
+
+  <section class="tj-grid">
+    <div class="tj-card" id="por-dia"><div class="tj-eye">Ritmo de entrada</div><h2>Casos novos por dia.</h2>
+      <p class="tj-sub" id="dia-sub">Barras cinzas: fins de semana e feriados</p>
+      <div class="tj-chart dash-skeleton" id="chart-dia" data-source="por_dia"></div></div>
+    <div class="tj-card" id="por-grau"><div class="tj-eye">Onde eles entraram</div><h2>Distribuição por grau.</h2>
+      <p class="tj-sub">Participação no total do período</p>
+      <div class="tj-bars dash-skeleton" id="chart-grau" data-source="por_grau"></div></div>
+  </section>
+
+  <section class="tj-grid">
+    <div class="tj-card" id="classes"><div class="tj-eye">O que mais se pede</div><h2>As dez classes com mais processos.</h2>
+      <p class="tj-sub">Classe segundo as Tabelas Processuais Unificadas do CNJ</p>
+      <div class="tj-bars dash-skeleton" id="chart-classes" data-source="top_classes"></div></div>
+    <div class="tj-card" id="assuntos"><div class="tj-eye">Sobre o que tratam</div><h2>Os dez assuntos mais frequentes.</h2>
+      <p class="tj-sub">Primeiro assunto informado no processo</p>
+      <div class="tj-bars dash-skeleton" id="chart-assuntos" data-source="top_assuntos"></div></div>
+  </section>
+
+  <section class="tj-grid">
+    <div class="tj-card" id="comarcas"><div class="tj-eye">Comarcas</div><h2>Casos novos por comarca.</h2>
+      <p class="tj-sub">Município do órgão julgador</p>
+      <div class="tj-bars dash-skeleton" id="chart-comarcas" data-source="por_comarca"></div></div>
+    <div class="tj-card" id="orgaos"><div class="tj-eye" id="org-eye">Órgãos julgadores</div><h2 id="org-h">Os dez órgãos com mais entradas.</h2>
+      <p class="tj-sub" id="org-sub">Clique num órgão para filtrar o dashboard</p>
+      <div class="tj-bars dash-skeleton" id="chart-orgaos" data-source="top_orgaos"></div></div>
+  </section>
+
+  <section class="tj-card" id="lista">
+    <div class="tj-eye">Lista completa</div><h2>Processos ajuizados no período.</h2>
+    <p class="tj-sub">Clique no cabeçalho para ordenar · busca por número, classe, assunto, órgão ou comarca</p>
+    <input class="tj-search" id="busca" type="search" placeholder="Buscar…" aria-label="Buscar processos">
+    <div class="tj-tbox">
+      <table class="tj-table" id="tabela" data-source="casos" data-row-key="id">
+        <thead><tr>
+          <th data-field="numero"><button data-k="numero">Número</button></th>
+          <th data-field="data"><button data-k="data">Ajuizamento</button></th>
+          <th data-field="grau"><button data-k="grau">Grau</button></th>
+          <th data-field="classe"><button data-k="classe">Classe</button></th>
+          <th data-field="assunto" class="opt"><button data-k="assunto">Assunto</button></th>
+          <th data-field="orgao" class="opt"><button data-k="orgao">Órgão julgador</button></th>
+          <th data-field="comarca"><button data-k="comarca">Comarca</button></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="tj-count" id="contagem"></div>
+  </section>
+  </div>
+  <div class="tj-ticker" data-source="destaques"><div class="lbl">Mais frequentes</div><div class="win"><div class="trk"></div></div><div class="src">Fonte: API Pública DataJud · CNJ · metadados públicos</div></div>
+  <footer class="tj-rodape">
+    <p><b>Justiça Aberta Roraima</b> é um projeto independente, sem vínculo com o Tribunal de Justiça de Roraima ou com o Conselho Nacional de Justiça. Os números vêm da <a href="https://datajud-wiki.cnj.jus.br/api-publica/" rel="noopener">API Pública do DataJud</a> (CNJ) e mostram só metadados de processos sem sigilo; não substituem a consulta oficial.</p>
+    <p>Código e dados no <a href="https://github.com/cedricrr/justica-aberta-roraima" rel="noopener">GitHub</a> · licença MIT para o código.</p>
+  </footer>
+
+  <section class="tv-wrap" id="tv" aria-label="Modo TV">
+    <div class="tv-tools">
+      <button class="tv-btn" type="button" id="tv-pause">Pausar rotação</button>
+      <button class="tv-btn" type="button" id="tv-full">Tela cheia</button>
+      <button class="tv-btn" type="button" id="tv-exit">Sair do modo TV</button>
+    </div>
+    <div class="tv-stage" id="tv-stage">
+      <div class="tv">
+        <div class="tv-head">
+          <div class="tv-brand"><b id="tv-titulo">Casos novos</b><span class="tv-filter" id="tv-filtro">Justiça Aberta Roraima · dados do TJRR</span></div>
+          <nav class="tv-pills" aria-label="Telas em rotação">
+            <button class="tv-pill" type="button" data-scr="0">Panorama</button>
+            <button class="tv-pill" type="button" data-scr="1">Ritmo</button>
+            <button class="tv-pill" type="button" data-scr="2">Assuntos</button>
+          </nav>
+          <div class="tv-when">Recorte do DataJud<b id="tv-recorte">—</b></div>
+        </div>
+        <div class="tv-prog"><div id="tv-prog"></div></div>
+        <div class="tv-main">
+
+          <section class="tv-scr tv-s1" data-i="0" aria-label="Panorama">
+            <div class="tv-col">
+              <div class="tv-eye">Casos novos</div>
+              <div class="tv-hero" data-source="resumo" data-field="total">—</div>
+              <div class="tv-lead" id="tv-lead1">processos ajuizados no período.</div>
+              <div class="tv-card" style="margin-top:auto">
+                <div class="tv-eye">Onde eles entraram</div>
+                <div class="tv-grau" data-source="por_grau"></div>
+              </div>
+            </div>
+            <div class="tv-card">
+              <div class="tv-eye">O que mais se pede</div>
+              <h2 class="tv-h">As cinco classes com mais processos.</h2>
+              <div class="tv-list" id="tv-classes" data-source="top_classes"></div>
+              <div class="tv-small">Classe segundo as Tabelas Processuais Unificadas do CNJ.</div>
+            </div>
+            <div class="tv-col">
+              <div class="tv-card grow">
+                <div class="tv-eye" id="tv-c3-eye">Comarcas</div>
+                <div class="tv-bv" id="tv-bv"><span class="n" data-source="resumo" data-field="share_bv">—</span><span class="t">dos casos novos<br>são de Boa Vista</span></div>
+                <div class="tv-small" id="tv-c3-sub" style="margin-top:calc(var(--u) * 14)">Fora da capital:</div>
+                <div class="tv-list tv-compact" id="tv-comarcas" data-source="por_comarca" style="margin-top:calc(var(--u) * 6)"></div>
+              </div>
+              <div class="tv-light">
+                <div><div class="k" id="tv-k1">vs. mês anterior</div><div class="v" data-source="resumo" data-field="var_mes">—</div><div class="s" id="tv-k1s">—</div></div>
+                <div><div class="k" id="tv-k2">vs. ano anterior</div><div class="v" data-source="resumo" data-field="var_ano">—</div><div class="s" id="tv-k2s">—</div></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tv-scr tv-s2" data-i="1" aria-label="Ritmo">
+            <div class="tv-col">
+              <div class="tv-eye" id="tv-s2-eye">Contra o ano anterior</div>
+              <div class="tv-hero" data-source="resumo" data-field="var_ano">—</div>
+              <div class="tv-lead" id="tv-s2-lead">casos novos em relação ao mesmo período do ano passado.</div>
+              <div class="tv-mid"><span class="n" data-source="resumo" data-field="var_mes">—</span><span class="t" id="tv-s2-mid">sobre o<br>mês anterior</span></div>
+              <div class="tv-foot-note"><b>Por que não é ao vivo?</b>
+                <p>O TJRR envia os dados ao CNJ em remessas periódicas. Esta tela usa a remessa carregada em <span data-source="carga" data-field="carga">—</span>.</p></div>
+            </div>
+            <div class="tv-card">
+              <div class="tv-eye">Ritmo de entrada</div>
+              <h2 class="tv-h">Casos novos por dia.</h2>
+              <div class="tv-chart" id="tv-dia" data-source="por_dia"></div>
+              <div class="tv-small">Barras cinzas: fins de semana e feriados.</div>
+            </div>
+            <div class="tv-card">
+              <div class="tv-eye" id="tv-org-eye">Órgãos julgadores</div>
+              <h2 class="tv-h" style="font-size:calc(var(--u) * 34)" id="tv-org-h">Onde mais chegaram processos.</h2>
+              <div class="tv-list tv-compact" id="tv-orgaos" data-source="top_orgaos"></div>
+            </div>
+          </section>
+
+          <section class="tv-scr tv-s3" data-i="2" aria-label="Assuntos">
+            <div class="tv-col">
+              <div class="tv-eye">Assunto mais frequente</div>
+              <div class="tv-top-name" id="tv-top-assunto" data-source="top_assuntos" data-field="assunto">—</div>
+              <div class="tv-mid"><span class="n" id="tv-top-casos" data-source="top_assuntos" data-field="casos">—</span><span class="t">processos novos<br>com esse assunto</span></div>
+              <div class="tv-foot-note"><b>Como contamos</b>
+                <p>Vale o primeiro assunto informado no processo. Um processo com vários assuntos entra uma vez só.</p></div>
+            </div>
+            <div class="tv-card">
+              <div class="tv-eye">Sobre o que tratam</div>
+              <h2 class="tv-h">Os dez assuntos mais frequentes.</h2>
+              <div class="tv-cols2" id="tv-assuntos" data-source="top_assuntos"></div>
+            </div>
+          </section>
+
+        </div>
+        <div class="tj-ticker" data-source="destaques"><div class="lbl">Mais frequentes</div><div class="win"><div class="trk"></div></div><div class="src">Fonte: API Pública DataJud · CNJ</div></div>
+      </div>
+    </div>
+  </section>
+  <div class="tj-tip" id="tip"></div>
+</div>
+</div>
+<script src="assets/calculos.js"></script>
+<script src="assets/painel.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+# Publica a pasta docs/ no GitHub Pages:
+# - a cada push na main (alterações feitas por você);
+# - ao fim de cada coleta de dados, porque um push feito pelo próprio Actions
+#   com o GITHUB_TOKEN não dispara outros workflows;
+# - manualmente.
+
+on:
+  push:
+    branches: ["main"]
+  workflow_run:
+    workflows: ["Atualiza dados DataJud"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "docs"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
